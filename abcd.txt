@@ -1,3 +1,181 @@
 hi
-hello
+
+
+napoojit@inlen8520088057 MINGW64 ~ (master)
+$ pwd
+/c/Users/napoojit
+
+napoojit@inlen8520088057 MINGW64 ~ (master)
+$ cd C:\Users\napoojit\Desktop\training\GIT
+bash: cd: C:UsersnapoojitDesktoptrainingGIT: No such file or directory
+
+napoojit@inlen8520088057 MINGW64 ~ (master)
+$ pwd
+/c/Users/napoojit
+
+napoojit@inlen8520088057 MINGW64 ~ (master)
+$ cd c:
+
+napoojit@inlen8520088057 MINGW64 /c
+$ cd users
+
+napoojit@inlen8520088057 MINGW64 /c/users
+$ cd napoojit/
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit (master)
+$ cd Desktop\training\git
+bash: cd: Desktoptraininggit: No such file or directory
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit (master)
+$ cd Desktop\training\GIT
+bash: cd: DesktoptrainingGIT: No such file or directory
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit (master)
+$ cd Desktop
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop (master)
+$ cd training
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training (master)
+$ cd GIT
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT (master)
+$ GIT init
+Initialized empty Git repository in C:/Users/napoojit/Desktop/training/GIT/.git/
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT (master)
+$ mkdir assignments
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT (master)
+$ cd assignments
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/napoojit/Desktop/training/GIT/assignments/.git/
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ touch abcd.txt
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ vi abcd.txt
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ vi abcd.txt
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ cat abcd.txt
+hi
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abcd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git add .
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abcd.txt
+
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git commit -m "i am poojitha"
+[master (root-commit) b0f0a0c] i am poojitha
+ Committer: poojitha <nallam.poojitha@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abcd.txt
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (master)
+$ git branch -M main
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (main)
+$ git remote add origin https://github.com/napoojit/git_assignment.git
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/napoojit/git_assignment.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abcd.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (main)
+$ git init
+git add .
+git commit -m "YOUR COMMIT NAME"
+git branch -M main
+git remote add origin https://github.com/napoojit/git_assignment.git
+git push -u origin main
+Reinitialized existing Git repository in C:/Users/napoojit/Desktop/training/GIT/assignments/.git/
+[main 508c450] YOUR COMMIT NAME
+ Committer: poojitha <nallam.poojitha@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+error: remote origin already exists.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/napoojit/git_assignment.git
+   b0f0a0c..508c450  main -> main
+branch 'main' set up to track 'origin/main'.
+
+napoojit@inlen8520088057 MINGW64 /c/users/napoojit/Desktop/training/GIT/assignments (main)
+$
 
